@@ -1,0 +1,25 @@
+# .NET Core
+bin/
+obj/
+*.user
+
+# Go
+backend/*.exe
+backend/*.dll
+backend/*.so
+backend/*.dylib
+
+# Frontend DLLs
+frontend/WinampRPC/winamp_bridge.dll
+
+# Installer & Setup Files
+Installer/
+installer.iss
+WinampRPC_Setup.exe
+WinampRPC_Setup*.exe
+
+# Misc
+out.json
+.vs/
+*.log
+*.tmp

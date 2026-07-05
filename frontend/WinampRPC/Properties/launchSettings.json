@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinampRPC (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinampRPC (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
