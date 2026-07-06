@@ -9,7 +9,7 @@ A modern, high-performance Discord Rich Presence (RPC) and Last.fm scrobbler plu
 - **Discord Rich Presence**: Show off what you're listening to in real-time on your Discord profile.
 - **Last.fm Integration**: Automatically fetches high-quality album art for your currently playing tracks.
 - **Modern UI**: A sleek, fully responsive WinUI 3 desktop application featuring light/dark mode, Mica backdrops, and fluid animations.
-- **Live Lyrics**: Automatically fetches and displays synchronized lyric for the current track. *(Note: Synced lyrics are provided by LRCLIB. If a song's lyrics are occasionally out of sync, it is due to the crowdsourced data provided by the API!)*
+- **Live Lyrics**: Automatically fetches and displays synchronized lyric for the current track. *(Note: Synced lyrics are provided by LRCLIB. If a song's lyrics are occasionally out of sync, it is due to the crowdsourced data provided by the API, I only picked the synced and the duration difference no more than 10s.)*
 - **Built-in Visualizer**: Includes a retro-inspired, high-framerate audio visualizer that reacts to the music playing in Winamp.
 - **Audio Format Info**: View detailed file metadata (bitrate, sample rate, codec, compression ratio).
 - **Lightning Fast Bridge**: The plugin itself is a lightweight C-shared DLL written in Go, meaning zero overhead or lag in Winamp.
