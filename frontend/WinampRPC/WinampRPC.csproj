@@ -102,7 +102,9 @@
       <_PubDirs Include="$([System.IO.Directory]::GetDirectories('$(PublishDir)'))" />
       <_LangDirsToDelete Include="@(_PubDirs)"
           Condition="$([System.Text.RegularExpressions.Regex]::IsMatch('%(Filename)', '^[a-zA-Z]{2,3}(-[A-Za-z0-9]+)+$')) and '%(Filename)' != 'en-us'" />
+      <_AIFilesToDelete Include="$(PublishDir)\Microsoft.Windows.AI.*" />
     </ItemGroup>
     <RemoveDir Directories="@(_LangDirsToDelete)" />
+    <Delete Files="@(_AIFilesToDelete)" />
   </Target>
 </Project>

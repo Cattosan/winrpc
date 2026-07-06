@@ -1399,15 +1399,15 @@ namespace WinampRPC
                         {
                             if (durationSecs > 0)
                             {
-                                // Find the closest match by duration, allowing up to a 3-second offset
+                                // Find the closest match by duration, allowing up to a 10-second offset
                                 bestMatch = await Task.Run(() => syncedResults
-                                    .Where(r => Math.Abs(r.duration - durationSecs) <= 3.0)
+                                    .Where(r => Math.Abs(r.duration - durationSecs) <= 10.0)
                                     .OrderBy(r => Math.Abs(r.duration - durationSecs))
                                     .FirstOrDefault());
                             }
-                            
-                            if (bestMatch == null)
+                            else
                             {
+                                // If duration is unknown, just take the first synced result
                                 bestMatch = syncedResults.FirstOrDefault();
                             }
                         }
